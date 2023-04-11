@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/to-do-list.ico"
+    />
+    <!-- add cdn link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- attach css style ecternal sheet -->
+    <link rel="stylesheet" href="./assets//css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header part with title  -->
+      <div class="todo-container">
+        <h1>
+          To-Do List
+          <img src="./assets/images/to-do-list.png" alt="notebook-image" />
+        </h1>
+        <!-- div for input field for task  -->
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            name="task"
+            placeholder="Add your task"
+          />
+          <button class="add-btn" type="submit">Add</button>
+        </div>
+        <!-- for display todo list -->
+        <ul id="list-container">
+          <!-- Here we are add HTML element through javascript -->
+        </ul>
+        <hr />
+
+        <div class="tasks-count-details">
+          <!-- display count of task left -->
+          <div id="task-left-div">
+            <span id="task-left"
+              >Tasks Left:<span id="not-completed-tasks">0</span></span
+            >
+          </div>
+          <!-- for all kind of filter present in todolist -->
+          <div id="filters-div">
+            <span id="all-tasks" class="filter grey-color">All</span>
+
+            <span id="uncompleted-tasks" class="filter grey-color"
+              >Uncomplete</span
+            >
+
+            <span id="completed-tasks" class="filter grey-color"
+              >Completed</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -197,7 +197,7 @@ function handleClickListener(event) {
   }
   // for add button action - add new task in todo list
   else if (target.className == "add-btn") {
-    let title = event.target.value;
+    let title = inputBox.value;
 
     if (title.length == 0) {
       showNotification("Task title cannot be empty!");
